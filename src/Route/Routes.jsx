@@ -19,7 +19,7 @@ const routes = createBrowserRouter([
 			element: <Home></Home>
 		},
 		{
-			path: "/About",
+			path: "/about",
 			element: <About></About>
 		},
 		{
@@ -27,7 +27,7 @@ const routes = createBrowserRouter([
 			element: <Product></Product>
 		},
 		{
-			path: "/Resources",
+			path: "/resources",
 			element: <Resources></Resources>
 		},
 		{
@@ -35,7 +35,7 @@ const routes = createBrowserRouter([
 			element: <Customer></Customer>
 		},
 		{
-			path: "/Service",
+			path: "/services",
 			element: <Service></Service>
 		}
 	  ]
