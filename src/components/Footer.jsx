@@ -35,7 +35,7 @@ const Footer = () => {
       whileInView="show"
       className="bg-gray-50 py-16 mt-16 px-6"
     >
-      <div className="section-container">
+      <div className="section-container px-4 sm:px-8 lg:px-0 ">
         <motion.div 
           variants={fadeIn('up', 0.3)} 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12"

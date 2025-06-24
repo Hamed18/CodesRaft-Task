@@ -9,7 +9,8 @@ const Schedule = () => {
       variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      className="max-w-7xl mx-auto px-4 py-16 md:py-24"
+      className="max-w-7xl mx-auto px-4 py-12 md:py-16"
+      id="resources"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
         {/* Left side - Image */}

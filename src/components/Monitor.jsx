@@ -11,8 +11,15 @@ const Monitor = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="max-w-7xl mx-auto px-4 py-16 md:py-24"
-    >
+      className="max-w-7xl mx-auto px-4 py-12 md:py-16"
+      id="product"
+    > 
+      <motion.h2 
+           variants={textVariant(0.3)}
+          className="text-3xl md:text-4xl font-bold text-center mb-16"
+      >
+          Best Selling Product
+        </motion.h2>
       <div className="flex flex-col md:flex-row items-center gap-12">
         {/* Left side - Content */}
         <motion.div 
@@ -35,7 +42,7 @@ const Monitor = () => {
             variants={fadeIn('up', 0.6)}
             className="text-gray-600 mb-8 md:w-4/5"
           >
-            Before the ship is really back. Round, round, all around the world. Round, all around the world. Round, all around the world. Round, all around the world.
+            Say goodbye to clunky sliders and hello to smooth, responsive, and touch-friendly carousels designed for today’s mobile users.
           </motion.p>
           <motion.a 
             variants={fadeIn('up', 0.7)}

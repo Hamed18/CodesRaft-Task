@@ -26,7 +26,7 @@ const Business = () => {
     variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      className="max-w-7xl mx-auto px-4 py-16"
+      className="max-w-7xl mx-auto px-4 py-12 md:py-16"
     >
       <motion.div 
         variants={fadeIn('up', 0.3)}
@@ -89,16 +89,16 @@ const Business = () => {
       </motion.div>
 
       <motion.div 
-         variants={fadeIn('up', 0.7)}
+        variants={fadeIn('up', 0.7)}
         className="text-center mt-12"
       >
         <motion.button 
-           variants={fadeIn('up', 0.8)}
+          variants={fadeIn('up', 0.8)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-lime-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-lime-700 transition-colors relative"
         >
-          Become a Partner
+          <a href="#newsletter" className="relative z-10">Become a Partner</a>
           <div className="absolute -z-10 w-full h-full rounded-full bg-lime-600/30 blur-xl top-0 left-0"></div>
         </motion.button>
       </motion.div>

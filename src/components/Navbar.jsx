@@ -10,9 +10,11 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About Us" },
-    { href: "#services", label: "Our Service" },
-    { href: "#testimonials", label: "Testimonials" },
+    { href: "#about", label: "About" },
+    { href: "#resources", label: "Resources" },
+    { href: "#product", label: "Product" },
+    { href: "#services", label: "Services" },
+    { href: "#testimonials", label: "Customers" },
   ];
 
   return (
@@ -42,7 +44,7 @@ const Navbar = () => {
               key={index}
               href={link.href}
               onClick={() => setActiveLink(link.href)}
-              className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-lime-500 after:transition-all
+              className={`text-md font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-lime-500 after:transition-all
                 ${
                   activeLink === link.href
                     ? "text-lime-500 after:w-full  "
@@ -60,7 +62,6 @@ const Navbar = () => {
       </div>
      
       {/* Mobile Menu */}
-
       {isMenuOpen && (
         <motion.div 
         variants={fadeIn('down', 0.2)}
@@ -88,7 +89,7 @@ const Navbar = () => {
               </motion.a>
             ))}
             <motion.button 
-               variants={fadeIn('up', 0.4)}
+              variants={fadeIn('up', 0.4)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="w-full bg-lime-600 text-white px-6 py-2.5 rounded-lg hover:bg-lime-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-lime-100"

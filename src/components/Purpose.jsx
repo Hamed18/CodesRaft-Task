@@ -17,7 +17,7 @@ const PurposeSection = () => {
   ];
 
   return (
-    <section id="about" className="w-full bg-gray-50 py-16 px-4 md:px-8">
+    <div id="about" className="w-full bg-gray-50 py-12 md:py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div  variants={fadeIn('right', 0.2)} initial="hidden" whileInView="show" className="grid md:grid-cols-3 grid-cols-1 gap-8" >
           <motion.div variants={fadeIn('right', 0.3)}>
@@ -43,7 +43,7 @@ const PurposeSection = () => {
           </motion.div>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -49,7 +49,7 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <section id="testimonials" className="py-16 px-4 max-w-7xl mx-auto">
+    <section id="testimonials" className="py-12 md:py-16 px-4 max-w-7xl mx-auto">
       <motion.div 
        variants={fadeIn('up', 0.3)} 
         className="text-center mb-12"

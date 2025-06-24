@@ -15,7 +15,7 @@ const Pricing = () => {
     variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      className="py-20 px-4"
+      className="py-12 md:py-16 px-4"
     >
       <div className="max-w-6xl mx-auto">
         <motion.h2 

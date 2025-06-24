@@ -5,9 +5,9 @@ import { fadeIn,textVariant} from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section id="home" className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 pt-44 pb-16 container mx-auto">
+    <section id="home" className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 pt-24 md:pt-36 pb-16 container mx-auto">
       {/* Left Column */}
-      <div className="w-full md:w-1/2 space-y-8">
+      <div className="w-full md:w-1/2 space-y-4">
         <motion.div  variants={fadeIn('right', 0.2)}  initial="hidden" whileInView="show">
           {/* Star badge */}
           <div className="flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer group">
@@ -25,7 +25,7 @@ const Hero = () => {
           We boost the growth for{' '}
           <span className="text-lime-600 relative inline-block">
             Startup to Fortune 500
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span>
+            {/* <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span> */}
           </span>{' '}
           Companies
           <span className="inline-block ml-2 animate-pulse">⏰</span>
