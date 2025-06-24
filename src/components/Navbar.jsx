@@ -62,14 +62,14 @@ const Navbar = () => {
           ))}
         </motion.div>
 
-        {/* Get in Touch Button (Theme switch removed) */}
+        {/* Become a Partner Button */}
         <motion.button
           variants={fadeIn('left', 0.3)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="hidden md:block bg-lime-600 text-white px-6 py-2.5 rounded-lg hover:bg-lime-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-lime-100"
         >
-          <NavLink to="/newsletter">Get in touch</NavLink>
+          <a href="#newsletter" className="relative z-10">Become a Partner</a>
         </motion.button>
       </div>
       
@@ -100,20 +100,20 @@ const Navbar = () => {
               </NavLink>
             ))}
             <motion.button
-  variants={fadeIn('up', 0.4)}
-  whileHover={{ scale: 1.02 }}
-  whileTap={{ scale: 0.98 }}
-  className="w-full bg-lime-600 text-white px-6 py-2.5 rounded-lg hover:bg-lime-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-lime-100"
->
-  <a href="#newsletter" onClick={() => setIsMenuOpen(false)}>
-    Get in touch
-  </a>
-</motion.button>
+              variants={fadeIn('up', 0.4)}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full bg-lime-600 text-white px-6 py-2.5 rounded-lg hover:bg-lime-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-lime-100"
+            >
+              <a href="#newsletter" className="relative z-10" onClick={() => setIsMenuOpen(false)}>
+                Become a Partner
+              </a>
+            </motion.button>
           </motion.div>
         </motion.div>
       )}
     </motion.div>
-  );
+  )
 };
 
 export default Navbar;

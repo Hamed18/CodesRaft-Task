@@ -19,7 +19,7 @@ const Monitor = () => {
           className="text-3xl md:text-4xl font-bold text-center mb-16"
       >
           Best Selling Product
-        </motion.h2>
+      </motion.h2>
       <div className="flex flex-col md:flex-row items-center gap-12">
         {/* Left side - Content */}
         <motion.div 
