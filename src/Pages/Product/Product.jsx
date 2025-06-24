@@ -1,9 +1,13 @@
-import React from 'react';
+import Pricing from "../../components/Pricing";
+import Monitor from "../../components/Monitor";
+
 
 const Product = () => {
 	return (
-		<div>
-			
+		<div className="py-12 md:py-24">
+			<Monitor />
+			<Pricing />
+		
 		</div>
 	);
 };

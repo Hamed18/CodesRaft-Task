@@ -1,9 +1,10 @@
-import React from 'react';
+import Testimonial from "../../components/Testimonial";
 
 const Customer = () => {
 	return (
-		<div>
-			
+		<div className="py-12 md:py-24">
+			<Testimonial />
+
 		</div>
 	);
 };

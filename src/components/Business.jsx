@@ -98,7 +98,7 @@ const Business = () => {
           whileTap={{ scale: 0.95 }}
           className="bg-lime-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-lime-700 transition-colors relative"
         >
-          <a href="#newsletter" className="relative z-10">Become a Partner</a>
+          {/* <a href="#newsletter" className="relative z-10">Become a Partner</a> */}
           <div className="absolute -z-10 w-full h-full rounded-full bg-lime-600/30 blur-xl top-0 left-0"></div>
         </motion.button>
       </motion.div>

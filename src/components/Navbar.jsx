@@ -100,15 +100,15 @@ const Navbar = () => {
               </NavLink>
             ))}
             <motion.button
-              variants={fadeIn('up', 0.4)}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full bg-lime-600 text-white px-6 py-2.5 rounded-lg hover:bg-lime-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-lime-100"
-            >
-              <NavLink to="/newsletter" onClick={() => setIsMenuOpen(false)}>
-                Get in touch
-              </NavLink>
-            </motion.button>
+  variants={fadeIn('up', 0.4)}
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+  className="w-full bg-lime-600 text-white px-6 py-2.5 rounded-lg hover:bg-lime-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-lime-100"
+>
+  <a href="#newsletter" onClick={() => setIsMenuOpen(false)}>
+    Get in touch
+  </a>
+</motion.button>
           </motion.div>
         </motion.div>
       )}

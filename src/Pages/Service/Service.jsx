@@ -1,9 +1,10 @@
-import React from 'react';
+import Feature from "../../components/Feature";
 
 const Service = () => {
 	return (
-		<div>
-			
+		<div className="py-12 md:py-24">
+			<Feature />
+
 		</div>
 	);
 };
